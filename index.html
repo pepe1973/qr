@@ -6,18 +6,20 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
-        <title>Document</title>
-        <script
-            src="https://unpkg.com/html5-qrcode"
-            type="text/javascript"
-        ></script>
+        <link
+            rel="stylesheet"
+            href="./stilus.css"
+        />
+        <title>Qr olvasó</title>
     </head>
     <body>
-        <div
-            id="reader"
-            height="600px"
-            width="600px"
-        ></div>
-        <script src="./scanner.js"></script>
+        <div class="container">
+            <h1>SZBI Szeged Telefonok</h1>
+            <div class="section">
+                <div id="my-qr-reader"></div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+        <script src="./public/scanner.js"></script>
     </body>
 </html>
